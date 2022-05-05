@@ -60,7 +60,8 @@ const HomeScreen = styled.section`
   flex-direction: row;
   overflow: hidden;
 
-  background-color: #262626;
+  /* background-color: #262626; */
+  background-color: #272936;
 `;
 
 const Todos = styled.div`
@@ -74,18 +75,20 @@ const Todos = styled.div`
 
 const Heading = styled.div`
   font-size: 30px;
-
+  font-family: "Secular One", sans-serif;
   margin-left: 13px;
   color: white;
 `;
 
 const LeftSide = styled.div`
-  background-color: #232323;
+  /* background-color: #232323; */
+  background-color: rgba(39, 41, 54, 1);
   width: 350px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 `;
 const RightSide = styled.div`
   display: flex;
+  margin-top: 20px;
   width: 100%;
   flex: 1;
   flex-direction: column;

@@ -35,6 +35,7 @@ const HeaderContainer = styled.header`
 
 const HeaderTitle = styled.h1`
   color: white;
+  font-family: "Radio Canada", sans-serif;
 `;
 
 const LinkSections = styled.nav`

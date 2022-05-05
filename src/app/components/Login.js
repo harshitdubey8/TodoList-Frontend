@@ -1,22 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import FaceIcon from "@mui/icons-material/Face";
 import KeyIcon from "@mui/icons-material/Key";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 
 import AuthInputCard from "./AuthInputCard";
+
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState();
+
+  const emailHandler = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log(email);
+  };
+
   return (
     <LoginScreen>
       <Heading1>Login</Heading1>
       <br></br>
       <Heading2>Have an account</Heading2>
 
-      <AuthForm>
-        <AuthInputCard placeholder={"email"} icon={<AlternateEmailIcon />} />
-        <AuthInputCard placeholder={"password"} icon={<KeyIcon />} />
+      <AuthForm onSubmit={submitHandler}>
+        <AuthInputCard
+          value={email}
+          onChange={emailHandler}
+          placeholder={"email"}
+          icon={<AlternateEmailIcon />}
+        />
+        <AuthInputCard
+          value={password}
+          onChange={passwordHandler}
+          placeholder={"password"}
+          icon={<KeyIcon />}
+        />
 
-        <AuthButton>Login</AuthButton>
+        <AuthButton type="submit">Login</AuthButton>
       </AuthForm>
     </LoginScreen>
   );
@@ -37,6 +63,7 @@ const Heading1 = styled.h2`
 
 const Heading2 = styled.h2`
   color: white;
+  font-family: "Radio Canada", sans-serif;
 
   font-size: 55px;
 `;

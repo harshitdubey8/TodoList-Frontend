@@ -7,7 +7,11 @@ function AuthInputCard(props) {
     <CardContainer>
       <InputHeading>{props.placeholder}</InputHeading>
       <InputContainer>
-        <InputField />
+        <InputField
+          onChange={props.onChange}
+          value={props.value}
+          type={props.placeholder}
+        />
         <InputIcon>{props.icon}</InputIcon>
       </InputContainer>
     </CardContainer>

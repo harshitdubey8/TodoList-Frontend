@@ -54,25 +54,33 @@ const WelcomeSection = styled.div`
 const WelcomeText1 = styled.h1`
   color: white;
   font-size: 20px;
+  font-family: "Secular One", sans-serif;
 `;
 const Username = styled.h1`
   color: white;
   font-size: 30px;
+  font-family: "Secular One", sans-serif;
 `;
 
 const MailId = styled.div`
   color: white;
   font-size: 15px;
+  font-family: "Secular One", sans-serif;
 `;
 
 const LogoutButton = styled.button`
-  color: #3a58f4;
-  background: transparent;
+  height: 35px;
+  width: 100px;
+  color: white;
+  background: #3a58f4;
   border: none;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   align-items: center;
-  font-size: 15px;
-  padding: 30px;
+  justify-content: center;
+  margin: 100px 0px 0px 120px;
 `;
 
 const NewTaskContainer = styled.form`
@@ -85,7 +93,9 @@ const NewTaskContainer = styled.form`
   margin: 0px 10px 0px 10px;
   margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #333333;
+  /* background-color: #333333; */
+  background-color: #313543;
+
   align-items: center;
   justify-content: space-between;
 `;

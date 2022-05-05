@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 function TodoCard(props) {
   return (
@@ -8,7 +8,7 @@ function TodoCard(props) {
       <Card>
         <TodoText>{props.text}</TodoText>
         <EditButton>
-          <EditIcon />
+          <DeleteIcon />
         </EditButton>
       </Card>
     </CardContainer>
@@ -26,7 +26,8 @@ const CardContainer = styled.div`
   margin: 0px 10px 0px 10px;
   margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: #333333;
+  /* background-color: #333333; */
+  background-color: #313543;
 `;
 
 const Card = styled.div`
@@ -38,6 +39,7 @@ const Card = styled.div`
 const TodoText = styled.div`
   font-size: 20px;
   color: white;
+  font-family: "Secular One", sans-serif;
 `;
 
 const EditButton = styled.button`
